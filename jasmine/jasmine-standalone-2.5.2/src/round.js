@@ -1,11 +1,11 @@
-function Round() {
+function Round(roll = new Roll()) {
   this.rolls = []
+  this.roll = roll
 };
 
 Round.prototype.rollOne = function() {
-  var roll = new Roll()
-  roll.bowl()
-  this.rolls.push(roll.score)
+  this.roll.randomScore()
+  this.rolls.push(this.roll.score)
 };
 
 Round.prototype.rollOneScore = function() {
@@ -15,18 +15,16 @@ Round.prototype.rollOneScore = function() {
 };
 
 Round.prototype.rollTwo = function() {
-  var roll = new Roll()
-  roll.bowl(0, remainingPins)
-  this.rolls.push(roll.score)
+  this.roll.randomScore(0, remainingPins)
+  this.rolls.push(this.roll.score)
 };
 
 Round.prototype.rollTwoScore = function() {
-  var rollTwoScoreCalc = this.rolls[1
+  var rollTwoScoreCalc = this.rolls[1]
   return "Roll 2 score = " + rollTwoScoreCalc
-
 };
 
 Round.prototype.totalRoundScore = function() {
   var totalRoundScoreCalc = rollOneScoreCalc + rollTwoScoreCalc
   return "Total score for the round = " + totalRoundScoreCalc
-}
+};
