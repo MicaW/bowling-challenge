@@ -1,12 +1,13 @@
 function Roll() {
-  this.score = randomScore()
+  this.score = null
 };
 
 Roll.prototype.bowl = function(){
-  roll = new Roll
-  roll.randomScore()
+  this.randomScore()
 };
 
-Roll.prototype.randomScore = function(){
-  Math.floor((Math.random() * 10) + 0);
+Roll.prototype.randomScore = function(min,max){
+  var min = 0
+  var max = 10
+  this.score = Math.floor(Math.random()*(max-min+1)+min);
 };
