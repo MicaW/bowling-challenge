@@ -1,5 +1,5 @@
 function Game() {
-  this.frames = 10
+  this.rounds = 10
 };
 
 Game.prototype.startGame = function(){
