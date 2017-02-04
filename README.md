@@ -9,14 +9,14 @@ Bowling Challenge
 * If you have a partial solution, **still check in a partial solution**
 * You must submit a pull request to this repo with your code by 9am Monday week
 
-Task: 
+Task:
 -----
 
 Count and sum the scores of a bowling game for one player (in JavaScript).
 
 A bowling game consists of 10 frames in which the player tries to knock down the 10 pins. In every frame the player can roll one or two times. The actual number depends on strikes and spares. The score of a frame is the number of knocked down pins plus bonuses for strikes and spares. After every frame the 10 pins are reset.
 
-As usual please start by 
+As usual please start by
 
 * Forking this repo
 
@@ -62,7 +62,7 @@ Code Review
 In code review we'll be hoping to see:
 
 * All tests passing
-* The code is elegant: every class has a clear responsibility, methods are short etc. 
+* The code is elegant: every class has a clear responsibility, methods are short etc.
 
 Reviewers will potentially be using this [code review rubric](docs/review.md).  Note that referring to this rubric in advance may make the challenge somewhat easier.  You should be the judge of how much challenge you want.
 
@@ -77,3 +77,21 @@ If you don't follow the usual Jasmine convention of having your tests in `spec` 
 2. On line 8, you will see where it looks for your code (`'src/**/*.js'`) and your tests (`'spec/**/*.js'`)
 3. Adjust these to point to the correct directories
 4. Done.
+
+
+USER stories
+As a player, I want to start a game, so that I can play Knock em down
+As a player, I want to play 10 rounds per game, so that the game isn't over too quickly
+As a player, I want to roll twice per round, so that I can knock down as many pins as possible
+As a player, I want a score card, so that I can see how I'm doing
+As a player, I want to get bonus points worth 2 rolls if I get a strike, so that I can get more points
+As a player, I want to get bonus points worth 1 roll if I get a spare, so that I can get more points
+
+PROCESS
+
+1. Write user stories
+2. Write domain model
+1. Add Jasmine library
+2. Add JQuery library
+3. Add Spec files
+4. Add src files

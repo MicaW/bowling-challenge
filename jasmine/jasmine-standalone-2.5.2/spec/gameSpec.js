@@ -1,13 +1,13 @@
-describe('Game' function(){
+describe('Game', function(){
 
-  var Game;
+  var game;
 
   beforeEach(function() {
     game = new Game();
   });
 
   describe('is expected to', function() {
-    it("has 10 frames", function() {
+    it("have 10 frames", function() {
       expect(game.frames).toBe(10)
     });
 
