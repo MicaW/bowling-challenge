@@ -2,14 +2,11 @@ function Roll() {
   this.score = randomScore()
 };
 
-Game.prototype.bowl = function(){
+Roll.prototype.bowl = function(){
   roll = new Roll
-  randomScore()
+  roll.randomScore()
 };
 
-Game.prototype.randomScore = function(){
-  Math.floor((Math.random() * 10) + 1);
-};
-
-Game.prototype.gameScore = function(){
+Roll.prototype.randomScore = function(){
+  Math.floor((Math.random() * 10) + 0);
 };

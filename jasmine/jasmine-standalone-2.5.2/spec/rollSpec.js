@@ -7,9 +7,10 @@ describe('Roll', function(){
   });
 
   describe('is expected to', function() {
-    it("generate a random score from 1 - 10 when player bowls", function() {
+    it("generate a random score from 0 - 10 when player bowls", function() {
       roll.bowl();
-      expect(roll.score()).toBe(1..10);
+      expect(roll.score).toBeGreaterThan(0);
+      expect(roll.score).toBeLessThan(10);
     });
 
   });
