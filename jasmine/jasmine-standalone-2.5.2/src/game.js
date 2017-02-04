@@ -1,5 +1,5 @@
-function Game() {
-  this.rounds = 10
+function Game(round = new Round()) {
+  this.rounds = []
 };
 
 Game.prototype.startGame = function(){

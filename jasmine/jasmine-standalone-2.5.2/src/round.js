@@ -15,6 +15,8 @@ Round.prototype.rollOneScore = function() {
 };
 
 Round.prototype.rollTwo = function() {
+  var rollOneScoreCalc = this.rolls[0]
+  var remainingPins = 10 - rollOneScoreCalc
   this.roll.randomScore(0, remainingPins)
   this.rolls.push(this.roll.score)
 };
@@ -25,6 +27,8 @@ Round.prototype.rollTwoScore = function() {
 };
 
 Round.prototype.totalRoundScore = function() {
+  var rollOneScoreCalc = this.rolls[0]
+  var rollTwoScoreCalc = this.rolls[1]
   var totalRoundScoreCalc = rollOneScoreCalc + rollTwoScoreCalc
   return "Total score for the round = " + totalRoundScoreCalc
 };
