@@ -11,6 +11,25 @@ body {
   font-size: 70px;
 }
 
+#bowl-button {
+  align: center;
+  background-color: white;
+  align: center;
+  border: none;
+  border-radius:15px;
+  font-family: 'Bungee';
+  font-size: 30px;
+  padding: 15px 32px;
+  position: relative;
+  left: 44.5%;
+  top: 50%;
+}
+
+#scoreboard-section {
+  position: relative;
+  top: 60%;
+}
+
 h2 {
   color: black;
   font-family: 'Bungee';
