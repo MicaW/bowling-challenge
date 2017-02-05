@@ -30,5 +30,5 @@ Round.prototype.totalRoundScore = function() {
   var rollOneScoreCalc = this.rolls[0]
   var rollTwoScoreCalc = this.rolls[1]
   var totalRoundScoreCalc = rollOneScoreCalc + rollTwoScoreCalc
-  return "Total score for the round = " + totalRoundScoreCalc
+  return totalRoundScoreCalc
 };
